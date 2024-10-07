@@ -1,0 +1,20 @@
+{
+  "services": [
+    {
+      "service": "Web Development",
+      "content": "We craft stunning, responsive, and high-performance websites that captivate your audience and provide a seamless user experience. Our websites are optimized for performance, ensuring speed, security, and scalability."
+    },
+    {
+      "service": "Website Maintenance",
+      "content": "Keeping your website up-to-date and functioning at its best is crucial for success. Our website maintenance services ensure that your site remains secure, fully operational, and optimized with the latest updates and features."
+    },
+    {
+      "service": "SEO Services",
+      "content": "With our expert SEO strategies, we help your website rank higher in search results, driving more organic traffic and improving visibility. Our SEO services are tailored to boost your digital presence and ensure long-term growth."
+    },
+    {
+      "service": "IT Consulting",
+      "content": "We provide expert IT consulting services to guide your business through digital transformation. Whether you need advice on infrastructure, cloud solutions, or software integration, our consultants will deliver strategic solutions to align technology with your business goals."
+    }
+  ]
+}
