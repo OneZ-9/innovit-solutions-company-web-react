@@ -71,7 +71,7 @@
     @apply mb-8 text-5xl font-bold leading-tight;
   }
   h2 {
-    @apply mb-6 text-4xl font-bold;
+    @apply mb-20 text-4xl font-bold;
   }
   h3 {
     @apply mb-4 text-2xl font-bold;
@@ -81,7 +81,7 @@
   }
 
   section {
-    @apply py-[112px];
+    @apply pt-[112px];
   }
 
   .hero-img {
@@ -94,5 +94,25 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  ion-icon {
+    color: #1e3b8a;
+    transition: all 0.3s;
+  }
+
+  ion-icon:hover {
+    color: #354f96;
+    transform: scale(1.1);
+  }
+
+  footer ion-icon {
+    color: white;
+    transition: all 0.3s;
+  }
+
+  footer ion-icon:hover {
+    color: white;
+    transform: scale(1.2);
   }
 }

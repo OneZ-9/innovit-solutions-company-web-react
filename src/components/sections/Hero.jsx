@@ -1,4 +1,5 @@
-import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
+import { Button } from "../ui/button";
 
 function Hero() {
   return (
@@ -8,18 +9,18 @@ function Hero() {
           <h1 className="text-white">
             Transforming Ideas into Digital Solutions
           </h1>
-          <p className="mb-6 text-white">
+          <p className="mb-8 text-white">
             At our innovative IT solutions company, we specialize in web
             development, SEO, and application development tailored to your
             unique needs. Let us help you navigate the digital landscape and
             drive your business forward.
           </p>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="lg">
-              Learn more
+            <Button variant="btn-outline" size="lg">
+              <Link to="#about"> Learn more</Link>
             </Button>
             <Button variant="default" size="lg">
-              Start Project
+              <Link to="#cta">Start Project</Link>
             </Button>
           </div>
         </div>

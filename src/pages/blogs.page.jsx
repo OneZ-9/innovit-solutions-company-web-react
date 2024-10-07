@@ -1,9 +1,9 @@
-function BlogPage() {
+function BlogsPage() {
   return (
     <div className="container flex h-dvh items-center justify-center">
-      Blog Page
+      Blogs Page
     </div>
   );
 }
 
-export default BlogPage;
+export default BlogsPage;

@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+
 function Logo() {
   return (
-    <div className="text-primary-foreground text-xl font-semibold">innovIT</div>
+    <div className="text-5xl font-semibold text-primary-foreground">
+      <Link to="/#hero">Innovit</Link>
+    </div>
   );
 }
 
