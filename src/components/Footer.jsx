@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Logo from "./Logo";
 import { Separator } from "./ui/separator";
+import { Button } from "./ui/button";
 
 function Footer() {
   useEffect(() => {
@@ -13,15 +14,24 @@ function Footer() {
     <footer className="container-full grid grid-cols-2 gap-12 bg-primary py-12 text-primary-foreground max-sm:gap-y-16 md:gap-28 lg:grid-cols-[2fr_2fr_1fr_1fr]">
       <div className="mt-4">
         <h4 className="mb-8">Company</h4>
-
         <div className="flex flex-col gap-6">
-          <a href="#" className="text-sm font-light text-secondary">
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             About Innovit
           </a>
-          <a href="#" className="text-sm font-light text-secondary">
+
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             Partners
           </a>
-          <a href="#" className="text-sm font-light text-secondary">
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             Careers
           </a>
         </div>
@@ -31,13 +41,22 @@ function Footer() {
         <h4 className="mb-6">Resources</h4>
 
         <div className="flex flex-col gap-6">
-          <a href="#" className="text-sm font-light text-secondary">
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             Blog
           </a>
-          <a href="#" className="text-sm font-light text-secondary">
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             Help center
           </a>
-          <a href="#" className="text-sm font-light text-secondary">
+          <a
+            href="#"
+            className="text-sm font-light text-secondary hover:underline"
+          >
             Privacy & terms
           </a>
         </div>
@@ -47,16 +66,32 @@ function Footer() {
         <Logo />
         <div className="mb-20 mt-4 flex gap-6">
           <a href="#">
-            <ion-icon name="mail-outline" size="small" />
+            <ion-icon
+              name="mail-outline"
+              size="small"
+              class="icon-contact-footer"
+            />
           </a>
           <a href="#">
-            <ion-icon name="logo-linkedin" size="small" />
+            <ion-icon
+              name="logo-linkedin"
+              size="small"
+              class="icon-contact-footer"
+            />
           </a>
           <a href="#">
-            <ion-icon name="logo-facebook" size="small" />
+            <ion-icon
+              name="logo-facebook"
+              size="small"
+              class="icon-contact-footer"
+            />
           </a>
           <a href="#">
-            <ion-icon name="logo-whatsapp" size="small" />
+            <ion-icon
+              name="logo-whatsapp"
+              size="small"
+              class="icon-contact-footer"
+            />
           </a>
         </div>
         <Separator className="h-[0.5px] bg-secondary" />
@@ -69,7 +104,7 @@ function Footer() {
       <div className="mt-4 max-sm:col-span-2 max-sm:col-start-1 max-sm:row-start-2 lg:row-start-1">
         <h4 className="mb-8">Contact us</h4>
         <address>
-          <p className="mb-16 text-sm font-light text-secondary">
+          <p className="mb-8 text-sm font-light text-secondary sm:mb-16">
             1234 Innovation Street, Tech City, Sri Lanka
           </p>
           <p className="flex flex-col gap-0 text-sm font-light text-secondary">

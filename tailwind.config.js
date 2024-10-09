@@ -1,8 +1,16 @@
+import containerqueries from "@tailwindcss/container-queries";
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: {
+    files: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
     container: {
       center: true,
       padding: {
@@ -13,6 +21,7 @@ export default {
         "2xl": "6rem",
       },
     },
+
     extend: {
       borderRadius: {
         lg: "var(--radius)",
@@ -63,5 +72,28 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container-full": {
+          width: "100%",
+          padding: "2rem", // Default padding
+          "@screen sm": {
+            padding: "3rem", // Padding for small screens and up
+          },
+          "@screen lg": {
+            padding: "4rem", // Padding for large screens and up
+          },
+          "@screen xl": {
+            padding: "5rem", // Padding for extra-large screens and up
+          },
+          // "@screen 2xl": {
+          //   padding: "6rem", // Padding for 2xl screens and up
+          // },
+        },
+      });
+    },
+    containerqueries,
+    fluid,
+  ],
 };

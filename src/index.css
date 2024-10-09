@@ -68,21 +68,41 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply mb-8 text-5xl font-bold leading-tight;
+    @apply mb-8 text-4xl font-bold leading-tight md:text-5xl;
   }
   h2 {
-    @apply mb-20 text-4xl font-bold;
+    @apply mb-12 text-3xl font-bold md:mb-20 md:text-4xl;
   }
   h3 {
-    @apply mb-4 text-2xl font-bold;
+    @apply mb-4 text-xl font-bold md:text-2xl;
   }
   p {
-    @apply text-lg;
+    @apply text-base sm:text-lg;
   }
 
   section {
     @apply pt-[112px];
   }
+}
+
+/* The components layer is also a good place to put custom styles for any third-party components */
+@layer components {
+  /* .container-full {
+  width: 100%;
+  padding: 1rem;
+}
+
+@screen sm {
+  .container-full {
+    padding: 2rem;
+  }
+}
+
+@screen lg {
+  .container-full {
+    padding: 4rem;
+  }
+} */
 
   .hero-img {
     background-image: linear-gradient(
@@ -94,25 +114,61 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100dvh;
   }
 
-  ion-icon {
-    color: #1e3b8a;
+  .blog h2 {
+    @apply mb-8 mt-16 text-primary md:mb-10 md:mt-20;
+  }
+
+  .blog p {
+    @apply !mb-6;
+  }
+
+  .blog p:first-child {
+    @apply mb-4 font-semibold text-secondary !important;
+  }
+
+  .blog h2:first-of-type {
+    @apply mt-0;
+  }
+
+  /* .blog h2:nth-child(2) {
+    @apply text-red-500 !important;
+  } */
+
+  /* .blog p:nth-child(1) {
+    @apply text-secondary;
+  } */
+
+  .icon-mobile-nav {
+    color: theme("colors.slate.200");
+  }
+
+  .icon-mobile-nav:hover {
+    color: theme("colors.white");
+  }
+
+  .icon-contact-about {
+    /* color: #1e3b8a; */
+    color: hsl(var(--primary));
     transition: all 0.3s;
   }
 
-  ion-icon:hover {
-    color: #354f96;
+  .icon-contact-about:hover {
+    /* color: #354f96; */
+    color: hsl(var(--primary) / 0.8);
     transform: scale(1.1);
   }
 
-  footer ion-icon {
-    color: white;
+  .icon-contact-footer {
+    color: theme("colors.white");
     transition: all 0.3s;
   }
 
-  footer ion-icon:hover {
-    color: white;
+  .icon-contact-footer:hover {
+    /* color: white; */
+    color: theme("colors.white");
     transform: scale(1.2);
   }
 }
